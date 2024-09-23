@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e293b;
+            color: #cac1c1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #0f172a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #cac1c1;
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+            margin-right: 3rem;
+        }
+
+        .nav ul li a {
+            color: #fff;
+        }
+
+        /* banner */
+        .banner {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* about */
+        .about {
+            padding: 50px 0;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* services */
+        .services {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .services-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .services-item {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            background: #1a2331;
+            border-radius: 5px;
+        }
+
+        .services-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .services-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .services-item p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* portfolio */
+        .portfolio {
+            padding: 50px 0;
+        }
+
+        .portfolio h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .portfolio-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* contact */
+        .contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            outline: none;
+            background-color: #1a2331;
+            color: #fff;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav ul li {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            .banner h2 {
+                font-size: 36px;
+            }
+
+            .banner p {
+                font-size: 16px;
+            }
+
+            .services-box {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="logo">
+            <a href="#banner">Portfolio</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner -->
+    <section class="banner" id="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>Welcome to Portfolio</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                    quidem.
+                </p>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner end -->
+
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                quidem.
+            </p>
+            <a href="about.html" class="btn">Read More</a>
+        </div>
+    </section>
+    <!-- about end -->
+
+    <!-- services -->
+    <section class="services" id="service">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-box">
+                <div class="services-item">
+                    <img src="assets/images/image1.png" alt="Web Design" />
+                    <h3>Web Design</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quidem.
+                    </p>
+                </div>
+                <div class="services-item">
+                    <img src="assets/images/image2.png" alt="Web Development" />
+                    <h3>Web Development</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quidem.
+                    </p>
+                </div>
+                <div class="services-item">
+                    <img src="assets/images/image3.png" alt="SEO" />
+                    <h3>SEO</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, quidem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services end -->
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-box">
+                <div class="portfolio-item">
+                    <img src="assets/images/image1.png" alt="Project 1" />
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/image2.png" alt="Project 2" />
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/image3.png" alt="Project 3" />
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/image4.png" alt="Project 4" />
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/image3.png" alt="Project 5" />
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/image2.png" alt="Project 6" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio end -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2020 Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
